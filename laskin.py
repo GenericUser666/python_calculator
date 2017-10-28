@@ -30,6 +30,20 @@ def div ():
         print (" ")
         print "g / h"
 
+def ExpHelper(a,b):
+    i = 0
+    tulos = 0
+    while i < int(b):
+        tulos = tulos + int(a) * int(a)
+        i += 1
+    return tulos
+
+def Exp():
+    a = raw_input("Insert first number: ")
+    b = raw_input("Insert second number: ")
+
+    print ExpHelper(a,b)
+
 print ("Welcome to Rekos calculator!")
 
 print ("Do you want to add, substract, multiplie or divide")
@@ -43,3 +57,5 @@ if lasku == "multiplie":
     mul()
 if lasku == "divide":
     div()
+if lasku == "power":
+    Exp()
